@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Star Company</title>
+    <link
+      rel="stylesheet"
+      href="css/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header class="header">
+          <div class="header__logo">
+            <a href="#">
+              <img
+                src="./assets/images/logo.png"
+                alt="Star Company Logo"
+              />
+            </a>
+          </div>
+          <form class="header__form">
+            <div class="header__form-field">
+              <input
+                class="header__input"
+                name="login-email"
+                type="email"
+                placeholder=" "
+                id="login-email"
+              />
+              <label
+                class="header__label"
+                for="login-email"
+                >Email</label
+              >
+              <div
+                class="header__invalid"
+                hidden
+              ></div>
+              <div
+                class="header__valid"
+                hidden
+              ></div>
+            </div>
+            <div class="header__form-field">
+              <input
+                class="header__input"
+                name="login-password"
+                type="password"
+                placeholder=" "
+                id="login-password"
+              />
+              <label
+                class="header__label"
+                for="login-password"
+                >Password</label
+              >
+              <a
+                class="header__forgot"
+                href="#"
+                >Forgot your password?</a
+              >
+            </div>
+
+            <button
+              class="header__button"
+              type="submit"
+            >
+              Log in
+            </button>
+          </form>
+        </header>
+        <main class="main">
+          <h1 class="main__title">StarCompany DESIGNS, MANUFACTURES AND</h1>
+          <h2 class="main__subtitle">
+            Launches Advanced Rockets and &#32; Spacecrafts
+          </h2>
+          <div class="slider">
+            <div class="slider__container">
+              <div class="slider__back-container">
+                <button
+                  class="slider__back slider__button"
+                  id="prevSlide"
+                >
+                  &#60;
+                </button>
+              </div>
+              <form class="slider__form">
+                <div class="slider__slide active">
+                  <div class="slider__content">
+                    <p class="slider__label">Who are you?</p>
+                    <div
+                      class="select"
+                      id="profession"
+                    >
+                      <div
+                        class="select__btn"
+                        id="profession-btn"
+                      >
+                        <span
+                          class="select__text"
+                          id="profession-text"
+                          >Select your profession</span
+                        >
+                        <img
+                          src="./assets/images/dropdown-icon-down.png"
+                          alt="dropdown icon"
+                          class="select__icon"
+                        />
+                      </div>
+
+                      <ul class="select__options">
+                        <li class="select__option profession-option">
+                          Engineer
+                        </li>
+                        <li class="select__option profession-option">
+                          Business Development Executive
+                        </li>
+                        <li class="select__option profession-option">
+                          Office Manager/PA
+                        </li>
+                        <li class="select__option profession-option">
+                          Accountant
+                        </li>
+                        <li class="select__option profession-option">
+                          VR Designer
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="slider__invalid slider__invalid--profession"
+                    hidden
+                  ></div>
+                </div>
+
+                <div class="slider__slide">
+                  <div class="slider__content">
+                    <p class="slider__label">What is your age?</p>
+                    <div
+                      class="select"
+                      id="age"
+                    >
+                      <div
+                        class="select__btn"
+                        id="age-btn"
+                      >
+                        <span
+                          class="select__text"
+                          id="age-text"
+                          >Select your age</span
+                        >
+                        <img
+                          src="./assets/images/dropdown-icon-down.png"
+                          alt="dropdown icon"
+                          class="select__icon"
+                        />
+                      </div>
+
+                      <ul class="select__options">
+                        <li class="select__option age-option">18</li>
+                        <li class="select__option age-option">19</li>
+                        <li class="select__option age-option">20</li>
+                        <li class="select__option age-option">21</li>
+                        <li class="select__option age-option">22</li>
+                        <li class="select__option age-option">23</li>
+                        <li class="select__option age-option">24</li>
+                        <li class="select__option age-option">25</li>
+                        <li class="select__option age-option">26</li>
+                        <li class="select__option age-option">27</li>
+                        <li class="select__option age-option">28</li>
+                        <li class="select__option age-option">29</li>
+                        <li class="select__option age-option">30</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="slider__invalid slider__invalid--age"
+                    hidden
+                  ></div>
+                </div>
+
+                <div class="slider__slide">
+                  <div class="slider__content">
+                    <label
+                      for="place"
+                      class="slider__label"
+                      >I am from</label
+                    >
+                    <input
+                      type="text"
+                      name="place"
+                      id="place"
+                      class="slider__input"
+                      placeholder="Input your place"
+                    />
+                  </div>
+                  <div class="slider__additional">
+                    <p>E.g.: New Roads or 70760</p>
+                    <p>
+                      We don’t use postal addresses to contact members directly!
+                    </p>
+                  </div>
+                  <div
+                    class="slider__invalid slider__invalid--place"
+                    hidden
+                  ></div>
+                </div>
+
+                <div class="slider__slide">
+                  <div class="slider__content">
+                    <label
+                      for="slider-email"
+                      class="slider__label"
+                      >Your email adress</label
+                    >
+                    <input
+                      type="email"
+                      name="slider-email"
+                      id="slider-email"
+                      class="slider__input"
+                      placeholder="Input your email"
+                    />
+                  </div>
+                  <div
+                    class="slider__invalid slider__invalid--email"
+                    hidden
+                  ></div>
+                </div>
+
+                <div class="slider__slide">
+                  <div class="slider__content">
+                    <label
+                      for="slider-password"
+                      class="slider__label"
+                      >Create your password</label
+                    >
+                    <input
+                      type="password"
+                      name="slider-password"
+                      id="slider-password"
+                      class="slider__input"
+                      placeholder="Input your password"
+                    />
+                  </div>
+                  <div class="slider__additional">
+                    <p>
+                      By clicking the button above you agree to our
+                      <em style="text-decoration: underline; cursor: pointer"
+                        >Terms of Use</em
+                      >
+                      and
+                      <em style="text-decoration: underline; cursor: pointer"
+                        >Privacy Policy</em
+                      >
+                      including use of cookies and to receive newsletters,
+                      account updates and offers sent by StarCompany.
+                    </p>
+                  </div>
+                  <div
+                    class="slider__invalid slider__invalid--password"
+                    hidden
+                  ></div>
+                  <div
+                    class="slider__valid"
+                    hidden
+                  ></div>
+                </div>
+              </form>
+              <button
+                class="slider__next slider__button"
+                id="nextSlide"
+              >
+                Next step &#62;
+              </button>
+
+              <button
+                class="slider__final slider__button"
+                id="finalSlide"
+                type="submit"
+                hidden
+              >
+                Start now &#10003;
+              </button>
+            </div>
+            <div class="slider__points">
+              <span class="slider__point point"></span>
+              <span class="slider__point"></span>
+              <span class="slider__point"></span>
+              <span class="slider__point"></span>
+              <span class="slider__point"></span>
+            </div>
+          </div>
+        </main>
+        <footer></footer>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="./js/index.js"
+    ></script>
+  </body>
+</html>
